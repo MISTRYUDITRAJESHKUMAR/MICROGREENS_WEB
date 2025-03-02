@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #FAF4DF;
+}
+
+/* =================body section complete======================== */
+/* =================header section start======================== */
+.header {
+    margin: 0px 20px;
+    margin-top: 20px;
+    display: flex;
+    height: 80px;
+    border-radius: 16px;
+    background: #406048;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 15px;
+    flex-wrap: wrap;
+}
+
+.header img {
+    width: auto;
+    height: 50px;
+}
+
+
+
+
+.links {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    list-style-type: none;
+}
+
+.links li a {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+/* =================header section complete======================== */
+/* HERO ONE START */
+
+
+.hero_one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('assets/imgs/bg\ leaf.png');
+    background-position: center;
+    border-radius: 20px;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-size: cover;
+    top: 0px;
+
+}
+
+
+.hero_one img {
+    width: 60%;
+    max-width: 1200px;
+    margin: 20px;
+    box-shadow: 10px 10px px 10px #406048;
+    border-radius: 50px;
+    border: 1px #406048 solid;
+    display: flex;
+}
+
+
+.hero_one .hero_one_text {
+    width: 949px;
+    height: 417px;
+    text-align: center;
+    position: absolute;
+    top: 200px;
+    color: #284630;
+    font-size: 130px;
+    font-weight: 500;
+    text-wrap: wrap;
+    text-shadow: 0px 5px 4px #000000;
+    font-family: "Sour Gummy", serif;
+    /* font-optical-sizing: auto; */
+}
+
+/* CUMPLETE HERO ONE ===========================*/
