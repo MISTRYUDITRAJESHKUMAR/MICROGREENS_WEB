@@ -4,33 +4,37 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #FAF4DF;
+    background-image: url('assets/imgs/bg leaf.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /* Header Section */
 .header {
-    margin: 0px 20px;
-    margin-top: 20px;
+    margin: 20px;
     display: flex;
     height: 80px;
     border-radius: 16px;
     background: #406048;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding: 10px 15px;
     flex-wrap: wrap;
 }
 
 .header img {
-    width: auto;
     height: 50px;
 }
 
 .links {
+    display: flex;
     display: flex;
     align-items: center;
     gap: 40px;
@@ -49,8 +53,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('assets/imgs/bg\ leaf.png');
+    background-image: url('assets/imgs/bg leaf.png');
+    /* background-attachment: fixed; */
     background-position: center;
+    background-repeat: no-repeat;
     border-radius: 20px;
     width: 100%;
     height: 100vh;
@@ -89,6 +95,12 @@ body {
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
+    body {
+        background-image: url('assets/imgs/bg\ leaf\ h.png');
+        background-size: cover;
+        background-size: 90vh;
+        background-attachment: fixed;
+    }
     .header {
         flex-direction: column;
         height: auto;
@@ -113,21 +125,27 @@ body {
         padding: 20px;
     }
 
-
-    .hero_two  {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        /* padding: 20px; */
+    
+    .hero_one .hero_one_text {
+        font-size: 12vw;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
-    .hero_two img {
-        width: 100%;
-    }
+    
+
+    
 }
 
 @media (max-width: 480px) {
+
+    body {
+        background-image: url('assets/imgs/bg\ leaf\ h.png');
+        background-size: cover;
+        background-size: 90vh;
+        background-attachment: fixed;
+    }
     .header {
         flex-direction: column;
         height: auto;
@@ -158,32 +176,39 @@ body {
     }
 
     
-
-    .hero_two {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        padding: 20px;
-    }
+    
 }
 
 /* <!-- HERO TWO SECTION --> */
 
-.hero_two{
-    margin-top: 10px;
-    align-items: center;
-}
-
 .hero_two img{
-    width: 99%;
-    box-shadow:  5px 5px 20px #030303;
-    /* border-radius: 10px; */
+    width: 90%;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    background-position: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #406048;
 }
 
+@media (max-width: 780px) {
+    .hero_two img {
+        width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 25px;
 
+    }
+}
+
+@media (max-width: 480px) {
+    .hero_two img {
+        padding: 0 25px;
+        width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+/* button css */
 
