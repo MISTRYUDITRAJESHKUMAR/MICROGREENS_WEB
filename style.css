@@ -2,10 +2,11 @@
 
 /* Global Styles */
 * {
-    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -23,7 +24,7 @@ body {
     height: 80px;
     border-radius: 16px;
     background: #406048;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 10px 15px;
     flex-wrap: wrap;
@@ -47,8 +48,15 @@ body {
     font-weight: 500;
     text-decoration: none;
 }
+.links li a:hover {
+    color: #000000;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 5px 10px;
+    transition: 0.5s;
+}
 
-/* Hero Section */
+/* Hero one Section */
 .hero_one {
     display: flex;
     justify-content: center;
@@ -84,7 +92,6 @@ body {
     height: auto;
     text-align: center;
     position: absolute;
-    top: 200px;
     color: #284630;
     font-size: 10vw;
     font-weight: 500;
@@ -93,6 +100,37 @@ body {
     font-family: "Sour Gummy", serif;
 }
 
+/* <!-- HERO TWO SECTION --> */
+
+.hero_two img{
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #406048;
+}
+
+@media (max-width: 780px) {
+    .hero_two img {
+        width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 25px;
+
+    }
+}
+
+@media (max-width: 480px) {
+    .hero_two img {
+        padding: 0 25px;
+        width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     body {
@@ -177,38 +215,6 @@ body {
 
     
     
-}
-
-/* <!-- HERO TWO SECTION --> */
-
-.hero_two img{
-    width: 90%;
-    display: block;
-    margin: 0 auto;
-    margin-top: 20px;
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px #406048;
-}
-
-@media (max-width: 780px) {
-    .hero_two img {
-        width: 100%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 0 25px;
-
-    }
-}
-
-@media (max-width: 480px) {
-    .hero_two img {
-        padding: 0 25px;
-        width: 100%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
 }
 /* button css */
 
