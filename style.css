@@ -111,26 +111,7 @@ body {
     box-shadow: 5px 5px 10px #406048;
 }
 
-@media (max-width: 780px) {
-    .hero_two img {
-        width: 100%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 0 25px;
 
-    }
-}
-
-@media (max-width: 480px) {
-    .hero_two img {
-        padding: 0 25px;
-        width: 100%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
 /* Responsive Adjustments */
 @media (max-width: 768px) {
     body {
@@ -142,7 +123,6 @@ body {
     .header {
         flex-direction: column;
         height: auto;
-        width: 100%;
         margin: 10px 10px;
         padding: 20px 10px;
     }
@@ -171,9 +151,6 @@ body {
         transform: translate(-50%, -50%);
     }
 
-    
-
-    
 }
 
 @media (max-width: 480px) {
@@ -187,10 +164,11 @@ body {
     .header {
         flex-direction: column;
         height: auto;
-        width: 100%;
         margin: 10px 10px;
         padding: 20px 10px;
+        
     }
+
 
     .header img {
         width: auto;
@@ -215,6 +193,27 @@ body {
 
     
     
+}
+
+@media (max-width: 780px) {
+    .hero_two img {
+        width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 25px;
+
+    }
+}
+
+@media (max-width: 480px) {
+    .hero_two img {
+        padding: 0 25px;
+        width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 /* button css */
 
