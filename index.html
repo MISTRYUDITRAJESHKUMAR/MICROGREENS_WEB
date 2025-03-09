@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Micro Greens</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
@@ -14,10 +14,10 @@
         <header class="header">
             <img src="assets/imgs/logo/03.jpg" alt="logo">
             <ul class="links">
-                <li><a href="">ABOUT MICRO GREEN'S</a></li>
-                <li><a href="">SHOP</a></li>
+                <li><a href="#hero_two">ABOUT MICRO GREEN'S</a></li>
+                <li><a href="">SHOP PLANTS AND KIT'S</a></li>
                 <li><a href="">HEALTH BENEFITS</a></li>
-                <li><a href="">CONTACT</a></li>
+                <li><a href="#footer">CONTACT</a></li>
             </ul>
         </header>
         <!-- HERO ONE SECTION -->
@@ -26,22 +26,24 @@
             <span class="hero_one_text"> MICRO <br> GREEN</span>
         </div>
         <!-- HERO TWO SECTION -->
-        <div class="hero_two">
+        <div id="hero_two" class="hero_two">
             <img src="assets/imgs/hero two ok.png" alt="">
         </div>
         <div class="btn_two">
             <a href="https://getbootstrap.com/docs/5.0/components/buttons/">Show All Plants</a>
         </div>
         <!-- HERO THREE SECTION -->
-        <h1 class="h1_After_hero_two">See More Deatils Of Micro Greens</h1>
+        <h1 id="Major_Benefits" class="h1_After_hero_two">See Some Major Benefits Of Micro Greens</h1>
         <!-- make a div have many small boxes of plant deatils -->
         <div class="card-container">
             <div class="card">
                 <img src="assets/imgs/deatails_img's/Radish Microgreens 2.jpg" alt="Card Image">
                 <hr>
                 <div class="card-content">
-                    <h3>Radish Microgreens  Benefits:</h3>
-                    <p> Rich in vitamins A, C, and K, these microgreens support liver detoxification, digestion, and offer a peppery flavor. They grow quickly (7-14 days) and are perfect for salads and sandwiches.</p>
+                    <h3>Radish Microgreens Benefits:</h3>
+                    <p> Rich in vitamins A, C, and K, these microgreens support liver detoxification, digestion, and
+                        offer a peppery flavor. They grow quickly (7-14 days) and are perfect for salads and sandwiches.
+                    </p>
                 </div>
             </div>
             <div class="card">
@@ -49,7 +51,8 @@
                 <hr>
                 <div class="card-content">
                     <h3>Sunflower Microgreens : Benefits</h3>
-                    <p>Packed with vitamins A, B, D, E, and proteins, they support heart health, skin, and immunity. They grow in 7-10 days and add a nutty flavor to salads and smoothies.</p>
+                    <p>Packed with vitamins A, B, D, E, and proteins, they support heart health, skin, and immunity.
+                        They grow in 7-10 days and add a nutty flavor to salads and smoothies.</p>
                 </div>
             </div>
             <div class="card">
@@ -57,7 +60,8 @@
                 <hr>
                 <div class="card-content">
                     <h3>Pea Shoot Microgreens : Benefits </h3>
-                    <p>Full of vitamins A, C, and K, they support bone health and digestion. With a sweet, fresh taste, they grow in 7-14 days and are great in salads and sandwiches.</p>
+                    <p>Full of vitamins A, C, and K, they support bone health and digestion. With a sweet, fresh taste,
+                        they grow in 7-14 days and are great in salads and sandwiches.</p>
                 </div>
             </div>
             <div class="card">
@@ -65,40 +69,64 @@
                 <hr>
                 <div class="card-content">
                     <h3>Basil Microgreens : Benefits</h3>
-                    <p>Contain antioxidants, vitamins A, C, and K, and have anti-inflammatory properties. They grow in 10-14 days and are ideal for Mediterranean dishes, soups, and pizzas.</p>
+                    <p>Contain antioxidants, vitamins A, C, and K, and have anti-inflammatory properties. They grow in
+                        10-14 days and are ideal for Mediterranean dishes, soups, and pizzas.</p>
                 </div>
             </div>
         </div>
 
         <!-- FOOTER -->
-        <footer class="footer">
-            <div class="footer-content">
-                <div class="footer-section about">
-                    <h3>About Micro Greens</h3>
-                    <p>We provide fresh and nutritious microgreens to enhance your meals and support your health. Our microgreens are grown with care and delivered fresh to your door.</p>
-                </div>
-                <div class="footer-section links">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Shop</a></li>
-                        <li><a href="#">Health Benefits</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section contact">
-                    <h3>Contact Us</h3>
-                    <p>Email: info@microgreens.com</p>
-                    <p>Phone: +123-456-7890</p>
-                    <p>Address: 123 Green Street, Plant City, PC 12345</p>
+        <!-- add links here -->
+        <!-- we will add a email to seller -->
+
+        <footer id="footer" class="footer">
+            <div class="footer-column">
+                <h3>About us</h3>
+                <hr>
+                <p>All Over India sells plants and kits for All Micro Greens</p>
+                <h3>Social Media</h3>
+                <hr>
+                <div class="social-icons">
+                    <a href="#"><img src="assets/imgs/social logo/INSTRA.jpg" alt=""></a>
+                    <a href="#"><img src="assets/imgs/social logo/facebook.png" alt=""></a>
                 </div>
             </div>
-            <div class="footer-bottom">
-                &copy; 2023 Micro Greens | Designed by YourCompany
+
+            <div class="footer-column">
+                <h3>Discover</h3>
+                <hr>
+                <a href="#">Buy Kit's Or Plants</a>
+                <br>
+                <!-- add a buy kits's and plant page -->
+                <a href="#">Help & Support</a>
+                <!-- add a help and support page -->
+            </div>
+
+            <div class="footer-column">
+                <h3>Available in Indian States</h3>
+                <hr>
+                <h5>Gujarat</h5>
+                <h5>Rajasthan</h5>
+                <h5>Maharashtra </h5>
+                <h5>Madhya Pradesh</h5>
+                <h5>And Many</h5>
+
+            </div>
+
+
+            <div class="footer-column contact-form">
+                <h3>Contact us</h3>
+                <hr>
+                <form action="https://formsubmit.co/uditmistryrajeshkumar@gmail.com" method="post">
+                    <input type="text" name="text" required placeholder="Your Name">
+                    <input type="email" name="email" required placeholder="Your Email">
+                    <input type="text" name="text" required placeholder="WhatsApp No:">
+                    <textarea placeholder="Message" name="Message" required></textarea>
+                    <button>Send</button>
+                </form>
             </div>
         </footer>
-        
+
 
 </body>
 
