@@ -40,7 +40,7 @@
                 <img src="assets/imgs/deatails_img's/Radish Microgreens 2.jpg" alt="Card Image">
                 <hr>
                 <div class="card-content">
-                    <h3>Radish Microgreens Benefits:</h3>
+                    <p>Radish Microgreens Benefits:</p>
                     <p> Rich in vitamins A, C, and K, these microgreens support liver detoxification, digestion, and
                         offer a peppery flavor. They grow quickly (7-14 days) and are perfect for salads and sandwiches.
                     </p>
@@ -50,7 +50,7 @@
                 <img src="assets/imgs/deatails_img's/sunflower.jpg" alt="Card Image">
                 <hr>
                 <div class="card-content">
-                    <h3>Sunflower Microgreens : Benefits</h3>
+                    <p>Sunflower Microgreens : Benefits</p>
                     <p>Packed with vitamins A, B, D, E, and proteins, they support heart health, skin, and immunity.
                         They grow in 7-10 days and add a nutty flavor to salads and smoothies.</p>
                 </div>
@@ -59,7 +59,7 @@
                 <img src="assets/imgs/deatails_img's/pea.jpg" alt="Card Image">
                 <hr>
                 <div class="card-content">
-                    <h3>Pea Shoot Microgreens : Benefits </h3>
+                    <p>Pea Shoot Microgreens : Benefits </p>
                     <p>Full of vitamins A, C, and K, they support bone health and digestion. With a sweet, fresh taste,
                         they grow in 7-14 days and are great in salads and sandwiches.</p>
                 </div>
@@ -68,7 +68,7 @@
                 <img src="assets/imgs/deatails_img's/bansi.jpg" alt="Card Image">
                 <hr>
                 <div class="card-content">
-                    <h3>Basil Microgreens : Benefits</h3>
+                    <p>Basil Microgreens : Benefits</p>
                     <p>Contain antioxidants, vitamins A, C, and K, and have anti-inflammatory properties. They grow in
                         10-14 days and are ideal for Mediterranean dishes, soups, and pizzas.</p>
                 </div>
@@ -76,15 +76,14 @@
         </div>
 
         <!-- FOOTER -->
-        <!-- add links here -->
-        <!-- we will add a email to seller -->
+        <!-- add social links here -->
 
         <footer id="footer" class="footer">
             <div class="footer-column">
-                <h3>About us</h3>
+                <p>About us</p>
                 <hr>
                 <p>All Over India sells plants and kits for All Micro Greens</p>
-                <h3>Social Media</h3>
+                <p>Social Media</p>
                 <hr>
                 <div class="social-icons">
                     <a href="#"><img src="assets/imgs/social logo/INSTRA.jpg" alt=""></a>
@@ -93,9 +92,9 @@
             </div>
 
             <div class="footer-column">
-                <h3>Discover</h3>
+                <p>Discover</p>
                 <hr>
-                <a href="#">Buy Kit's Or Plants</a>
+                <a href="#">Shop Kit's Or Plants</a>
                 <br>
                 <!-- add a buy kits's and plant page -->
                 <a href="#">Help & Support</a>
@@ -103,7 +102,7 @@
             </div>
 
             <div class="footer-column">
-                <h3>Available in Indian States</h3>
+                <p>Available in Indian States</p>
                 <hr>
                 <h5>Gujarat</h5>
                 <h5>Rajasthan</h5>
@@ -115,17 +114,56 @@
 
 
             <div class="footer-column contact-form">
-                <h3>Contact us</h3>
+                <p>Contact us</p>
                 <hr>
-                <form action="https://formsubmit.co/uditmistryrajeshkumar@gmail.com" method="post">
-                    <input type="text" name="text" required placeholder="Your Name">
+                <form action="https://api.web3forms.com/submit" method="post">
+                    <input type="hidden" name="access_key" value="f2e055f6-7ad4-4598-ae07-ff428bc2efb6">
+
+                    <input type="text" name="name" required placeholder="Your Name">
                     <input type="email" name="email" required placeholder="Your Email">
-                    <input type="text" name="text" required placeholder="WhatsApp No:">
-                    <textarea placeholder="Message" name="Message" required></textarea>
+                    <h5 style="margin-top: auto; margin-bottom: 5px;">Enter Number</h5>
+                    <textarea type="Number" name="Number" id="phoneInput" maxlength="14" oninput="validateInput(this)"
+                        rows="1" cols="15">+91 </textarea>
+                    <script>
+                        function validateInput(el) {
+                            let value = el.value;
+
+                            // Ensure the input starts with +91
+                            if (!value.startsWith("+91 ")) {
+                                el.value = "+91 ";
+                                return;
+                            }
+
+                            // Remove non-numeric characters except +91
+                            el.value = "+91 " + value.substring(4).replace(/\D/g, '');
+
+                            // Limit to exactly 10 digits after +91
+                            if (el.value.length > 14) {
+                                el.value = el.value.slice(0, 14);
+                            }
+                        }
+                    </script>
+                    <select type="text" name="Selected" class="form_section" required>
+                        <option value="" disabled selected>Select What You Need :</option>
+                        <option>Information</option>
+                        <option>Plant</option>
+                        <option>kit's</option>
+                    </select>
+                    <select type="text" name="permission" class="form_section Form_text_sizing" required>
+                        <option value="" disabled selected>Give Us Permission</option>
+                        <option>
+                            I give you permission too call or send WhatsApp message For Information or buy Plants.
+                        </option>
+                    </select>
                     <button>Send</button>
                 </form>
             </div>
+            
         </footer>
+        <div class="copyright">
+            <p>&copy; 2023 Micro Greens. All rights reserved.</p>
+        </div>
+      
 
 
 </body>
